@@ -29,12 +29,15 @@ EuropePMC: (Ukrainian OR Ukraine) AND refugee AND (anxiety OR depression OR PTSD
 Filter: Open access
 
 Records identified (total): 505 
-a) PubMed: 45 
-b) EuropePMC: 460
+ a) PubMed: 45 
+ b) EuropePMC: 460
 
 After duplicates removal: 485 
+
 Title/ abstract screening: 485 
+
 Full text screening: 41 
+
 Included: 11
 
 ## Eligibility criteria
