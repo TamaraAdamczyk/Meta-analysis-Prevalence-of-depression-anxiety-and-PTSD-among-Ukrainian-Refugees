@@ -62,8 +62,8 @@ Outcomes info:
 study_id outcome_domain instrument cutoff_value cutoff_definition n_assessed n_above_cutoff prevalence_percent mean_score sd_score response_rate notes_on_measurement
 
 ## Statistical Analysis
-Effect size: logit-transformed proportions (PLO)
-Model: random-effects (Paule–Mandel)
-Heterogeneity: I², τ², Q
-Sensitivity analyses: leave-one-out, RoB exclusion
-No meta-regression due to <10 studies per outcome
+- Effect size: logit-transformed proportions (PLO)
+- Model: random-effects (Paule–Mandel)
+- Heterogeneity: I², τ², Q
+- Sensitivity analyses: leave-one-out, RoB exclusion
+- No meta-regression due to <10 studies per outcome
