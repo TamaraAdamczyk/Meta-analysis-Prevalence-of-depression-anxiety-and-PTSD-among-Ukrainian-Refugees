@@ -85,19 +85,23 @@ Using logit‑transformed proportions and Paule–Mandel random‑effects models
 ## Heterogeneity
 All three outcomes showed substantial heterogeneity, consistent with differences in sampling, measurement tools, timing of data collection, and host‑country contexts:
 
--Depression: I² = 85.4%
+- Depression: I² = 85.4%
 - Anxiety: I² = 97.1%
 - PTSD: I² = 99.4%
 
-Visual Outputs
+## Visualisation
+
 Forest plots were generated for each outcome to illustrate study‑level prevalence and pooled estimates.
 <img width="821" height="553" alt="image" src="https://github.com/user-attachments/assets/6fcd6ced-3511-4843-a023-52dfa1308800" />
+
 Fig 1. Figure 1. Forest plot showing study‑level and pooled prevalence estimates of depression among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
 <img width="802" height="551" alt="image" src="https://github.com/user-attachments/assets/96556581-8e1a-4600-9f87-ee96d4fd925e" />
+
 Figure 2. Forest plot showing study‑level and pooled prevalence estimates of anxiety among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
 <img width="818" height="557" alt="image" src="https://github.com/user-attachments/assets/fde2e969-3aa8-4816-abd5-89ce8cefd8fc" />
+
 Figure 3. Forest plot showing study‑level and pooled prevalence estimates of PTSD among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
 ## Interpretation
