@@ -1,0 +1,197 @@
+---
+title: "Prevalence of depression, anxiety and PTSD among Ukrainian Refugees in host countries: systematic review and meta-analysis"
+author: "Tamara"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+    toc_float: true
+---
+```{r setup, include=FALSE}
+library(readxl)
+library(dplyr)
+library(metafor)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+# Introduction
+
+Context of the displacement: Russian full-scale invasion in February 2022
+Mental health risks in forced migration: find stats on mental health risks in forced migration, particularly in context of war refugees - how this typically differs from say economical migrants; find prevalence of mental health conditions in general population too
+Exisiting evidence: individual studies and previous meta-data from other war refugees groups (if available?)
+Knowledge gap: No previous meta-analysis focused on Ukrainian refugees
+Additional topics to introduce: anxiety, depression and PTSD and validated assessment tools
+
+# Methods
+
+## Search strategy
+
+Databases searched: PubMed, EuropePMC
+
+Date of searches: 06/01/2026
+
+Search terms:
+
+a) PubMed:
+(Ukrainian OR Ukraine) AND
+(refugee* OR displaced) AND
+(anxiety OR depression OR PTSD OR "post-traumatic stress") AND
+(prevalence OR symptom*)
+
+b) EuropePMC:
+(Ukrainian OR Ukraine) AND refugee AND
+(anxiety OR depression OR PTSD) AND prevalence
+
+Filter: Open access
+
+Records identified (total): 505
+a) PubMed: 45
+b) EuropePMC: 460
+
+After duplicates removal: 485
+Title/ abstract screening: 485
+Full text screening: 41
+Included: 11
+
+## Eligibility criteria
+
+Inclusion criteria:
+
+- Population: Ukrainian refugees displaced after Feb 2022
+- Outcomes: depression, anxiety, PTSD
+- Study designs: cross‑sectional, cohort baseline
+- Validated self‑report mental‑health questionnaires: PHQ‑9, PHQ‑8, PHQ‑4, GAD‑7, BAI, ITQ, IES‑R, PCL‑5, CRIES‑13
+
+Exclusion criteria:
+
+- Studies inside Ukraine
+- Qualitative studies
+- Non‑validated self‑report mental‑health questionnaires
+- No extractable prevalence data; no means/SD
+
+## Data extraction
+
+Study info:
+
+study_id	first_author	year	title	journal	country_host	study_design	sampling_method	n_total	age_mean	age_sd	percent_female	population_notes	time_since_displacement_months	refugee_status_definition	risk_of_bias_sampling	risk_of_bias_measurement	risk_of_bias_reporting	overall_risk_of_bias	notes
+
+Outcomes info:
+
+study_id	outcome_domain	instrument	cutoff_value	cutoff_definition	n_assessed	n_above_cutoff	prevalence_percent	mean_score	sd_score	response_rate	notes_on_measurement
+
+## Statistical Analysis
+
+Effect size: logit-transformed proportions (PLO)  
+Model: random-effects (Paule–Mandel)  
+Heterogeneity: I², τ², Q  
+Sensitivity analyses: leave-one-out, RoB exclusion  
+No meta-regression due to <10 studies per outcome
+
+# Results
+
+```{r load-data}
+study   <- read_excel("C:/Users/tamci/OneDrive/Desktop/R projects/Meta-analysis/meta-analysis extraction.xlsx", sheet = "Study")
+outcome <- read_excel("C:/Users/tamci/OneDrive/Desktop/R projects/Meta-analysis/meta-analysis extraction.xlsx", sheet = "Outcome")
+
+names(study)
+names(outcome)
+```
+
+```{r prevalence}
+#Looking at prevalence
+dat_prev <- outcome %>%
+  filter(!is.na(n_assessed),
+         !is.na(n_above_cutoff)) %>%
+  left_join(study, by = "study_id") %>%
+  mutate(
+    prop = n_above_cutoff / n_assessed
+  )
+
+#Cross-checking with excel sheet
+dat_prev %>%
+  select(study_id, outcome_domain, instrument,
+         n_assessed, n_above_cutoff, prop, prevalence_percent)
+```
+## Depression meta-analysis
+```{r depression}
+#Random-effect meta-analysis for depression
+#Depression prevalence
+dat_dep <- dat_prev %>%
+  filter(outcome_domain == "depression")
+
+es_dep <- escalc(measure = "PLO",
+                 xi = n_above_cutoff,
+                 ni = n_assessed,
+                 data = dat_dep)
+
+res_dep <- rma(yi, vi, data = es_dep, method = "PM")  # or method = "REML"
+
+summary(res_dep)
+
+#Back-transform pooled estimate and prediction interval to prevalence
+predict(res_dep, transf = transf.ilogit, digits = 3)
+```
+
+Forest plot depression
+```{r forest-plot-depression}
+# Forest plot for depression
+forest(res_dep,
+       slab = dat_dep$study_id,
+       transf = transf.ilogit,
+       refline = predict(res_dep, transf = transf.ilogit)$pred,
+       xlab = "Prevalence (proportion)",
+       main = "Depression prevalence among Ukrainian refugees")
+```
+
+## Anxiety meta-analysis
+```{r anxiety}
+#Random-effect meta-analysis for anxiety
+dat_anx <- dat_prev %>%
+  filter(outcome_domain == "anxiety")
+
+es_anx <- escalc(measure = "PLO",
+                 xi = n_above_cutoff,
+                 ni = n_assessed,
+                 data = dat_anx)
+
+res_anx <- rma(yi, vi, data = es_anx, method = "PM")
+summary(res_anx)
+predict(res_anx, transf = transf.ilogit, digits = 3)
+```
+Forest plot anxiety
+```{r forest-plot-anxiety}
+# Forest plot for anxiety
+forest(res_anx,
+       slab = dat_anx$study_id,
+       transf = transf.ilogit,
+       refline = predict(res_anx, transf = transf.ilogit)$pred,
+       xlab = "Prevalence (proportion)",
+       main = "Anxiety prevalence among Ukrainian refugees")
+```
+
+## PTSD meta-analysis
+```{r PTSD}
+#Random-effect meta-analysis for PTSD
+dat_ptsd <- dat_prev %>%
+  filter(outcome_domain == "PTSD")
+
+es_ptsd <- escalc(measure = "PLO",
+                  xi = n_above_cutoff,
+                  ni = n_assessed,
+                  data = dat_ptsd)
+
+res_ptsd <- rma(yi, vi, data = es_ptsd, method = "PM")
+summary(res_ptsd)
+predict(res_ptsd, transf = transf.ilogit, digits = 3)
+```
+Forest plot PTSD
+```{r forest-plot-PTSD}
+# Forest plot for PTSD
+forest(res_ptsd,
+       slab = dat_ptsd$study_id,
+       transf = transf.ilogit,
+       refline = predict(res_ptsd, transf = transf.ilogit)$pred,
+       xlab = "Prevalence (proportion)",
+       main = "PTSD prevalence among Ukrainian refugees")
+```
