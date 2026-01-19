@@ -113,7 +113,7 @@ Across available open‑access studies, Ukrainian refugees show elevated prevale
 
 Remaining Work
 - Update the PRISMA flow diagram.
-- Add sensitivity analyses (e.g., excluding high‑risk studies, alternative cut‑offs).
+- Add sensitivity analyses.
 - Explore potential sources of heterogeneity (e.g., host country, instrument type).
 - Improve Introduction section.
 - Add a short section on clinical interpretation and limitations of self‑report tools.
