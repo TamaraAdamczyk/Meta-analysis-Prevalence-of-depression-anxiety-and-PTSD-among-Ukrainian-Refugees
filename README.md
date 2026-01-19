@@ -12,8 +12,6 @@ This is a work in progress. I rely on open‑access studies only, the evidence b
 # Introduction
 Armed conflicts in recent years have driven record levels of global displacement, with the 2022 full‑scale Russian invasion of Ukraine forcing millions of people to flee their homes. War‑related displacement is strongly linked to higher rates of mental‑health difficulties.. A large meta‑analysis by Blackmore et al. (2020) reported high pooled prevalence estimates among refugees and asylum seekers, including 31.46% for PTSD, 31.5% for depression, and 11% for anxiety disorders. Other systematic reviews of war‑affected refugee populations similarly highlight substantial mental‑health burdens and wide variability in reported prevalence, often shaped by methodological differences across studies (Patane et al., 2022). This study focuses specifically on Ukrainian refugees in host countries, synthesising available evidence on the prevalence of depression, anxiety, and PTSD following displacement.
 
-Points to develop for introduction: context of the displacement: Russian full-scale invasion in February 2022 Mental health risks in forced migration: find stats on mental health risks in forced migration, particularly in context of war refugees - how this typically differs from say economical migrants; find prevalence of mental health conditions in general population too Exisiting evidence: individual studies and previous meta-data from other war refugees groups (if available?) Knowledge gap: No previous meta-analysis focused on Ukrainian refugees Additional topics to introduce: anxiety, depression and PTSD and validated assessment tools
-
 # Methods
 ## Search strategy
 Databases searched: PubMed, EuropePMC
@@ -51,9 +49,11 @@ Inclusion criteria:
 Exclusion criteria:
 
 - Studies inside Ukraine
+- Non-Ukrainian refugee groups
 - Qualitative studies
 - Non‑validated self‑report mental‑health questionnaires
 - No extractable prevalence data; no means/SD
+- Ukrainian migrants arriving in host countries prior to Feb 2022
 
 ## Data extraction
 Study info:
@@ -63,6 +63,10 @@ study_id first_author year title journal country_host study_design sampling_meth
 Outcomes info:
 
 study_id outcome_domain instrument cutoff_value cutoff_definition n_assessed n_above_cutoff prevalence_percent mean_score sd_score response_rate notes_on_measurement
+
+## Risk of Bias Assessment
+- Risk of bias was assessed for all included studies using JBI
+- RoB was recorded in data extraction spreadsheet and will be used in sensitivity analyses
 
 ## Statistical Analysis
 - Effect size: logit-transformed proportions (PLO)
@@ -94,7 +98,7 @@ All three outcomes showed substantial heterogeneity, consistent with differences
 Forest plots were generated for each outcome to illustrate study‑level prevalence and pooled estimates.
 <img width="821" height="553" alt="image" src="https://github.com/user-attachments/assets/6fcd6ced-3511-4843-a023-52dfa1308800" />
 
-Fig 1. Figure 1. Forest plot showing study‑level and pooled prevalence estimates of depression among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
+Figure 1. Forest plot showing study‑level and pooled prevalence estimates of depression among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
 <img width="802" height="551" alt="image" src="https://github.com/user-attachments/assets/96556581-8e1a-4600-9f87-ee96d4fd925e" />
 
@@ -106,3 +110,13 @@ Figure 3. Forest plot showing study‑level and pooled prevalence estimates of P
 
 ## Interpretation
 Across available open‑access studies, Ukrainian refugees show elevated prevalence of depression, anxiety, and PTSD. These findings align with broader evidence on the mental‑health impact of war‑related displacement. Results should be interpreted cautiously due to high heterogeneity, limited study availability, and methodological variability across included studies.
+
+Remaining Work
+- Update the PRISMA flow diagram.
+- Add sensitivity analyses (e.g., excluding high‑risk studies, alternative cut‑offs).
+- Explore potential sources of heterogeneity (e.g., host country, instrument type).
+- Improve Introduction section.
+- Add a short section on clinical interpretation and limitations of self‑report tools.
+- Document the full workflow more clearly (search strategy, extraction decisions, code comments). This is just a short summary for repository.
+- Write a Discussion.
+- Research how outcomes of this study compare to other refugee groups.
