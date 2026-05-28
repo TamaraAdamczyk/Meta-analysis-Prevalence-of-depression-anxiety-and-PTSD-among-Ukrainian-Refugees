@@ -94,7 +94,7 @@ All three outcomes showed substantial heterogeneity, consistent with differences
 - PTSD: I² = 99.4%
 
 ## Sensitivity Analyses
-
+Sensitivity analyses (leave one out) showed that no single study substantially altered the pooled prevalence estimates for depression, anxiety, or PTSD. For depression and anxiety, the pooled estimates remained stable across all iterations, indicating robust results. For PTSD, one study reduced heterogeneity when removed, but the overall pooled estimate remained consistent. These findings suggest that the meta analytic results are not driven by any single influential study.
 
 ## Visualisation
 
