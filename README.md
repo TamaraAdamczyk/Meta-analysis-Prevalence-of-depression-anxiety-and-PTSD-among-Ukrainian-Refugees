@@ -38,6 +38,11 @@ Full text screening: 41
 
 Included: 11
 
+<img width="661" height="650" alt="image" src="https://github.com/user-attachments/assets/3894ef2b-b564-4ecc-b7c3-8361391311a4" />
+
+Figure 1. Prisma Flow Diagram
+
+
 ## Eligibility criteria
 Inclusion criteria:
 
@@ -101,15 +106,15 @@ Sensitivity analyses (leave one out) showed that no single study substantially a
 Forest plots were generated for each outcome to illustrate study‑level prevalence and pooled estimates.
 <img width="821" height="553" alt="image" src="https://github.com/user-attachments/assets/6fcd6ced-3511-4843-a023-52dfa1308800" />
 
-Figure 1. Forest plot showing study‑level and pooled prevalence estimates of depression among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
+Figure 2. Forest plot showing study‑level and pooled prevalence estimates of depression among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
 <img width="802" height="551" alt="image" src="https://github.com/user-attachments/assets/96556581-8e1a-4600-9f87-ee96d4fd925e" />
 
-Figure 2. Forest plot showing study‑level and pooled prevalence estimates of anxiety among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
+Figure 3. Forest plot showing study‑level and pooled prevalence estimates of anxiety among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
 <img width="818" height="557" alt="image" src="https://github.com/user-attachments/assets/fde2e969-3aa8-4816-abd5-89ce8cefd8fc" />
 
-Figure 3. Forest plot showing study‑level and pooled prevalence estimates of PTSD among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
+Figure 4. Forest plot showing study‑level and pooled prevalence estimates of PTSD among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
 ## Interpretation
 Across available open‑access studies, Ukrainian refugees show elevated prevalence of depression, anxiety, and PTSD. These findings align with broader evidence on the mental‑health impact of war‑related displacement. Results should be interpreted cautiously due to high heterogeneity, limited study availability, and methodological variability across included studies.
