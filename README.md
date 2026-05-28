@@ -93,6 +93,9 @@ All three outcomes showed substantial heterogeneity, consistent with differences
 - Anxiety: I² = 97.1%
 - PTSD: I² = 99.4%
 
+## Sensitivity Analyses
+
+
 ## Visualisation
 
 Forest plots were generated for each outcome to illustrate study‑level prevalence and pooled estimates.
