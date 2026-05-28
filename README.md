@@ -120,8 +120,6 @@ Figure 4. Forest plot showing study‑level and pooled prevalence estimates of P
 Across available open‑access studies, Ukrainian refugees show elevated prevalence of depression, anxiety, and PTSD. These findings align with broader evidence on the mental‑health impact of war‑related displacement. Results should be interpreted cautiously due to high heterogeneity, limited study availability, and methodological variability across included studies.
 
 Remaining Work
-- Update the PRISMA flow diagram.
-- Add sensitivity analyses.
 - Explore potential sources of heterogeneity (e.g., host country, instrument type).
 - Improve Introduction section.
 - Add a short section on clinical interpretation and limitations of self‑report tools.
