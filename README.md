@@ -119,6 +119,11 @@ Figure 3. Forest plot showing study‑level and pooled prevalence estimates of a
 
 Figure 4. Forest plot showing study‑level and pooled prevalence estimates of PTSD among Ukrainian refugees, based on a Paule–Mandel random‑effects model.
 
+### Forest plots of subgroup analysis by host country
+<img width="1101" height="792" alt="Depression subgroup analysis by country" src="https://github.com/user-attachments/assets/70dc79f4-a1d9-49d7-93cb-c0246c1a0531" />
+
+Figure 5. **Depression prevalence among Ukrainian refugees by host country.** Panels A–D show study‑level prevalence estimates and corresponding 95% confidence intervals for depression among Ukrainian refugees, stratified by host country (Czechia, Germany, Lithuania, and Switzerland). Each panel displays the observed proportion from the contributing study and the pooled estimate from a random‑effects model using logit‑transformed proportions. Estimates vary across countries, with higher prevalence observed in Czechia and Lithuania and lower estimates in Germany and Switzerland. All models are based on single‑study subgroups; therefore, pooled estimates are identical to the study‑level values.
+
 ## Interpretation
 Across available open‑access studies, Ukrainian refugees show elevated prevalence of depression, anxiety, and PTSD. These findings align with broader evidence on the mental‑health impact of war‑related displacement. Results should be interpreted cautiously due to high heterogeneity, limited study availability, and methodological variability across included studies.
 
