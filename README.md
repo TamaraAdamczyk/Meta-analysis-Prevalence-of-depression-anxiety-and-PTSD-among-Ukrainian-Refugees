@@ -101,6 +101,9 @@ All three outcomes showed substantial heterogeneity, consistent with differences
 ## Sensitivity Analyses
 Sensitivity analyses (leave one out) showed that no single study substantially altered the pooled prevalence estimates for depression, anxiety, or PTSD. For depression and anxiety, the pooled estimates remained stable across all iterations, indicating robust results. For PTSD, one study reduced heterogeneity when removed, but the overall pooled estimate remained consistent. These findings suggest that the meta analytic results are not driven by any single influential study.
 
+## Subgroup Analysis by Host Country
+Subgroup analyses by host country suggested some variation in prevalence estimates across settings. For depression, point estimates ranged from 27% in Germany to 47% in Czechia, although most subgroups were based on single studies and confidence intervals overlapped. Anxiety showed a clearer pattern, with substantially higher prevalence in studies conducted in Germany (51%) compared with Czechia (23%) and Switzerland (28%), with non‑overlapping confidence intervals indicating potentially meaningful contextual differences. PTSD prevalence also varied, with Denmark showing markedly lower estimates (12%) than Germany (45%) and Poland (48%). These findings should be interpreted cautiously due to small subgroup sizes but may indicate that post‑migration context contributes to between‑study heterogeneity.
+
 ## Visualisation
 
 Forest plots were generated for each outcome to illustrate study‑level prevalence and pooled estimates.
