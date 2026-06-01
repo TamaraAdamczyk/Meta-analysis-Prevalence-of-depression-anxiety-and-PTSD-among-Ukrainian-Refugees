@@ -124,6 +124,11 @@ Figure 4. Forest plot showing study‑level and pooled prevalence estimates of P
 
 Figure 5. **Depression prevalence among Ukrainian refugees by host country.** Panels A–D show study‑level prevalence estimates and corresponding 95% confidence intervals for depression among Ukrainian refugees, stratified by host country (Czechia, Germany, Lithuania, and Switzerland). Each panel displays the observed proportion from the contributing study and the pooled estimate from a random‑effects model using logit‑transformed proportions. Estimates vary across countries, with higher prevalence observed in Czechia and Lithuania and lower estimates in Germany and Switzerland. All models are based on single‑study subgroups; therefore, pooled estimates are identical to the study‑level values.
 
+<img width="1058" height="719" alt="Anxiety subgroup analysis by country" src="https://github.com/user-attachments/assets/59225fcf-7223-4e5e-ab43-42abbd67bf31" />
+
+Figure 6. **Anxiety prevalence among Ukrainian refugees by host country.** Panels A–C present study‑level prevalence estimates and 95% confidence intervals for anxiety among Ukrainian refugees, stratified by host country (Czechia, Germany, and Switzerland). Each panel displays the observed proportion from contributing studies and the pooled estimate from a random‑effects model using logit‑transformed proportions. Anxiety prevalence was lowest in Czechia (23%) and Switzerland (28%), while studies conducted in Germany showed substantially higher estimates (pooled 51%), reflecting contributions from two studies with consistent findings. As each subgroup contains one or two studies, pooled estimates largely mirror the underlying study‑level values.
+
+
 ## Interpretation
 Across available open‑access studies, Ukrainian refugees show elevated prevalence of depression, anxiety, and PTSD. These findings align with broader evidence on the mental‑health impact of war‑related displacement. Results should be interpreted cautiously due to high heterogeneity, limited study availability, and methodological variability across included studies.
 
